@@ -17,7 +17,7 @@ public class Recycler : MonoBehaviour
             RecycleAction(this);
     }
 
-    void onTriggerEnter()
+    void OnTriggerEnter()
     {
         canBeRecycled = true;
         Start();

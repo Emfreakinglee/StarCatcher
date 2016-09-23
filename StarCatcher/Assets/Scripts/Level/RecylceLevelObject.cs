@@ -22,10 +22,12 @@ public class RecylceLevelObject : MonoBehaviour {
 
     void OnTriggerEnter()
     {
+        i = UnityEngine.Random.Range(0, recyclableList.Count - 1);
         newLocation.x = StaticVars.nextSectionPosition;
         recyclableList[i].cube.position = newLocation;
         StaticVars.nextSectionPosition += StaticVars.distance;
-        if (i < recyclableList.Count -1)
-            i++;
+        if (recyclableList.Count > 0)
+            recyclableList.RemoveAt(i);
+
     }
 }
