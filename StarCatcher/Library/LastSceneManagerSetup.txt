@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Endless.unity
+- path: Assets/Scenes/926.unity
   isLoaded: 1
   isActive: 1
